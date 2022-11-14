@@ -111,10 +111,15 @@ for (var i = 0; i < numMonths; i++){
     }
 }
 
-// maximum monthly profit and loss respectively
+// averaged total profit/loss over entire period
+var averageProfitLoss = changesToProfitLoss/numMonths
 
+// maximum monthly profit and loss respectively
+var maxProfit = Math.max(...allProfitLossChanges);
+var lowestLoss = Math.min(...allProfitLossChanges);
 
 // determine the indices for max profit and loss
-
+var maxProfitIndex = allProfitLossChanges.indexOf(maxProfit);
+var lowestLossIndex = allProfitLossChanges.indexOf(lowestLoss);
 
 // log final results to console
