@@ -90,8 +90,12 @@ var finances = [
 //------------------------------------------------------------------------
 
 // calculate length of month
-
+var numMonths = finances.length;
 // declare empty variables
+var totalProfitLoss = 0;
+var changesToProfitLoss = 0;
+var prevFigure = 0
+var allProfitLossChanges = [];
 
 
 // loop through the months
