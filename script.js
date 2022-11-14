@@ -99,7 +99,17 @@ var allProfitLossChanges = [];
 
 
 // loop through the months
-
+for (var i = 0; i < numMonths; i++){
+    totalProfitLoss += finances[i][1];
+    if (i==0){
+        allProfitLossChanges.push(0); // no profit or loss for first year
+    }
+    else {
+        changesToProfitLoss+=(finances[i][1]-prevFigure); // increment the total profit-loss variable
+        allProfitLossChanges.push(finances[i][1]-prevFigure); // calculate profit-loss/month and append to list
+        prevFigure = finances[i][1]; // previous finance value stored here
+    }
+}
 
 // maximum monthly profit and loss respectively
 
