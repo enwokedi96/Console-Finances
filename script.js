@@ -87,6 +87,20 @@ var finances = [
     ['Feb-2017', 671099]
     ];
 
-    //------------------------------------------------------------------------
+//------------------------------------------------------------------------
 
-    
+// calculate length of month
+
+// declare empty variables
+
+
+// loop through the months
+
+
+// maximum monthly profit and loss respectively
+
+
+// determine the indices for max profit and loss
+
+
+// log final results to console
