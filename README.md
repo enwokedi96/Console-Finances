@@ -6,6 +6,7 @@ Visit the live website [here](https://enwokedi96.github.io/js-finance-calc/).
 
 ## Usage
 The screenshot of the console is shown below.
+
 <img alt="console results" src="/images/screenshot.PNG"/>
 
 The number of months is the same as the total length of nested elements in the finance data.
