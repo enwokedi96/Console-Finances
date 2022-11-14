@@ -123,3 +123,17 @@ var maxProfitIndex = allProfitLossChanges.indexOf(maxProfit);
 var lowestLossIndex = allProfitLossChanges.indexOf(lowestLoss);
 
 // log final results to console
+//console.log(maxProfitIndex,lowestLossIndex);
+console.log(`Financial Analysis`);
+console.log(`----------------------`);
+console.log(`Total number of months: ${numMonths}`);
+console.log(`Total Profit/Loss: $${totalProfitLoss}`);
+console.log(`Average changes in Profit/Losses: $${Math.round((averageProfitLoss + Number.EPSILON)*1000)/1000}`);
+console.log(`Greatest increase in profits: ${finances[maxProfitIndex][0]}, was $${maxProfit}`);
+console.log(`Greatest decrease in losses: ${finances[lowestLossIndex][0]}, was $${lowestLoss}`);
+
+// alerts
+alert(`Total number of months: ${numMonths}` + `Total Profit/Loss: $${totalProfitLoss}` +
+    `Average changes in Profit/Losses: $${Math.round((averageProfitLoss + Number.EPSILON)*1000)/1000}` + 
+    `Greatest increase in profits: ${finances[maxProfitIndex][0]}, was $${maxProfit}` + 
+    `Greatest decrease in losses: ${finances[lowestLossIndex][0]}, was $${lowestLoss}`);
