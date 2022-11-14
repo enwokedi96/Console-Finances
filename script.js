@@ -129,8 +129,8 @@ console.log(`------------------------`);
 console.log(`Total number of months: ${numMonths}`);
 console.log(`Total Profit/Loss: $${totalProfitLoss}`);
 console.log(`Average changes in Profit/Losses: $${Math.round((averageProfitLoss + Number.EPSILON)*1000)/1000}`);
-console.log(`Greatest increase in profits recorded on ${finances[maxProfitIndex][0]} was $${maxProfit}`);
-console.log(`Greatest decrease in losses recorded on ${finances[lowestLossIndex][0]} was $${lowestLoss}`);
+console.log(`Greatest increase in profits, recorded on ${finances[maxProfitIndex][0]}, was $${maxProfit}`);
+console.log(`Greatest decrease in losses, recorded on ${finances[lowestLossIndex][0]}, was $${lowestLoss}`);
 
 // alerts
 alert(`Total number of months: ${numMonths} ` + `Total Profit/Loss: $${totalProfitLoss} ` +
